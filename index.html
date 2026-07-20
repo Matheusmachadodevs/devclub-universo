@@ -1,91 +1,168 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="pt-BR">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>DEVCLUB - Universo da Programação</title>
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style.css" />
     <script src="js/script.js" defer></script>
-</head>
-<body>
+  </head>
+  <body>
     <header class="header">
-        <div class="header-content">
-            <div class="logo">DEVCLUB</div>
-            
-            <nav class="nav">
-                <a href="#formacoes">Formações</a>
-                <a href="#empresas">Empresas</a>
-                <a href="#tecnologias">Tecnologias</a>
-                <a href="#tutoriais">Tutoriais</a>
-            </nav>
-            
-            <div class="nav-right">
-                <a href="#area-aluno">Área do Aluno</a>
-                <button class="btn-signin">Sign In</button>
-            </div>
-            
-            <button class="menu-toggle">☰</button>
+      <div class="header-content">
+        <div class="logo">DEVCLUB</div>
+
+        <nav class="nav">
+          <a href="#formacoes">Formações</a>
+          <a href="#empresas">Empresa</a>
+          <a href="#tecnologias">Tecnologias</a>
+          <a href="#tutoriais">Tutoriais</a>
+        </nav>
+
+        <div class="nav-right">
+          <a href="#area-aluno">Área do Aluno</a>
+          <button class="btn-signin">Entre aqui</button>
         </div>
+
+        <button class="menu-toggle">☰</button>
+      </div>
     </header>
 
     <main>
-        <section class="hero">
-            <svg id="connections" class="connections"></svg>
-            
-            <div class="hero-content">
-                <div class="devclub-reveal">DEVCLUB</div>
-                
-                <div class="content">
-                    <h1>UNIVERSO<br>DA PROGRAMAÇÃO</h1>
-                    <p>Um organismo vivo em contínua evolução</p>
-                </div>
+      <section class="hero">
+        <svg id="connections" class="connections"></svg>
 
-                <div class="tech tech-html">
-                    <div class="tech-dot"></div>
-                    <div class="tech-label">HTML</div>
-                </div>
-                
-                <div class="tech tech-css">
-                    <div class="tech-dot"></div>
-                    <div class="tech-label">CSS</div>
-                </div>
-                
-                <div class="tech tech-javascript">
-                    <div class="tech-dot"></div>
-                    <div class="tech-label">JavaScript</div>
-                </div>
-                
-                <div class="tech tech-ai">
-                    <div class="tech-dot"></div>
-                    <div class="tech-label">IA</div>
-                </div>
-                
-                <div class="tech tech-react">
-                    <div class="tech-dot"></div>
-                    <div class="tech-label">React</div>
-                </div>
-                
-                <div class="tech tech-typescript">
-                    <div class="tech-dot"></div>
-                    <div class="tech-label">TypeScript</div>
-                </div>
-                
-                <div class="tech tech-nodejs">
-                    <div class="tech-dot"></div>
-                    <div class="tech-label">Node.js</div>
-                </div>
-                
-                <div class="tech tech-python">
-                    <div class="tech-dot"></div>
-                    <div class="tech-label">Python</div>
-                </div>
-            </div>
+        <div class="hero-content">
+          
+<div class="devclub-reveal">DEVCLUB</div> 
+         <div class="content">
+ 
+  
+            <h1>
+    CADA LINHA 
+  <br>  DE CÓDIGO<br>
+    CONSTRÓI O UNIVERSO
+  </h1>
 
-            <div class="hero-cta">
-                <button class="btn-primary">Começar Agora</button>
-                <p class="scroll-indicator">SCROLL</p>
-            </div>
-        </section>
+  <p>Um organismo vivo em contínua evolução</p>
+
+</div>
+
+         
+  <div class="hero-cta">
+          <button class="btn-primary">Começar Agora</button>
+         
+        </div>
+
+   <div class="stats-section">
+        <div class="avatars">
+            <img src="https://i.pravatar.cc/40?img=1" alt="aluno">
+            <img src="https://i.pravatar.cc/40?img=22" alt="aluno">
+            <img src="https://i.pravatar.cc/40?img=3" alt="aluno">
+            <img src="https://i.pravatar.cc/40?img=4" alt="aluno">
+            <img src="https://i.pravatar.cc/40?img=5" alt="aluno">
+        </div>
+        <div class="stats-text">
+            <p class="stats-number">+100 mil </p>
+            <p class="stats-subtitle">alunos transformaram suas vidas</p>
+        </div>
+    </div>
+
+
+      
+      </section>
     </main>
-</body>
+<section class="formacoes" id="formacoes">
+    <div class="formacoes-header">
+        <div class="formacoes-title">
+            <h2>EXPLORE O UNIVERSO DA PROGRAMAÇÃO<br>Descubra seu caminho no universo</h2>
+        </div>
+        <div class="formacoes-description">
+            <p>Conheça nossas formações e escolha a melhor trilha para sua carreira...</p>
+        </div>
+    </div>
+    
+    <!-- Planetas em baixo -->
+<div class="formacoes-planets">
+    <div class="planeta frontend" data-formacao="frontend">
+        Programação Front End
+    </div>
+    <div class="planeta backend" data-formacao="backend">
+        Programação Back End
+    </div>
+    <div class="planeta fullstack" data-formacao="fullstack">
+        Programação <br> Full Stack
+    </div>
+    <div class="planeta mobile" data-formacao="mobile">
+        Programação Mobile
+    </div>
+    <div class="planeta ia" data-formacao="ia">
+        Gestor de IA
+    </div>
+</div>
+
+
+<!-- MODAL FRONT END -->
+<div class="modal-formacao" id="modalFrontEnd" style="display: none;">
+    <div class="modal-overlay"></div>
+    <div class="modal-content">
+        <button class="modal-close">×</button>
+        <img src="/assets/img/img-front-end.png" alt="Programação Front End" class="modal-image">
+    <button class="modal-btn">Quero começar →</button>
+    
+      </div>
+</div>
+
+
+
+
+<div class="modal-formacao" id="modalBackEnd" style="display: none;">
+    <div class="modal-overlay"></div>
+    <div class="modal-content">
+        <button class="modal-close">×</button>
+        <img src="assets/img/img-backend.png" alt="..." class="modal-image">
+        <button class="modal-btn modal-btn-backend"">Quero começar →</button>
+    </div>
+</div>
+
+
+
+<div class="modal-formacao" id="modalMobile" style="display: none;">
+    <div class="modal-overlay"></div>
+    <div class="modal-content">
+        <button class="modal-close">×</button>
+        <img src="assets/img/mobile.png" alt="..." class="modal-image">
+        <button class="modal-btn modal-btn-mobile">Quero começar →</button>
+    </div>
+</div>
+
+
+<div class="modal-formacao" id="modalIA" style="display: none;">
+    <div class="modal-overlay"></div>
+    <div class="modal-content">
+        <button class="modal-close">×</button>
+        <img src="assets/img/gestorIa.png" alt="..." class="modal-image">
+        <button class="modal-btn modal-btn-ia">Quero começar →</button>
+    </div>
+</div>
+
+<div class="modal-formacao" id="modalFullStack" style="display: none;">
+    <div class="modal-overlay"></div>
+    <div class="modal-content">
+        <button class="modal-close">×</button>
+        <img src="assets/img/full-stack.png" alt="..." class="modal-image">
+        <button class="modal-btn modal-btn-fullstack">Quero começar →</button>
+    </div>
+</div>
+
+
+
+</section>
+
+
+
+
+
+
+  </body>
 </html>
