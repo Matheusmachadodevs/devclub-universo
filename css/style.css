@@ -430,6 +430,8 @@ height: 100vh;
     width: 600px;
     height: 600px;
     margin: 100px auto 0;
+
+    z-index: 40;
 }
 
 .planeta {
@@ -442,6 +444,7 @@ height: 100vh;
     justify-content: center;
     text-align: center;
     cursor: pointer;
+
 }
 
 /* Posicionamento em órbita */
@@ -785,4 +788,169 @@ box-shadow: 0 0 22px rgba(120, 120, 255, .40);
 .modal-btn-fullstack:hover {
     background: linear-gradient(135deg, rgba(140, 170, 255, 1), rgba(92, 92, 220, 1)) !important;
     box-shadow: 0 0 20px rgba(120, 140, 255, .8) !important;
+}
+
+
+/* Por que estudar na DevClub? */
+
+.por-que-estudar {
+    width: 100%;
+    padding: 80px 0;
+    position: relative;  
+   
+ position: relative;  /* ← Adiciona */
+    z-index: 39;  /* ← Adiciona */
+
+}
+.por-que-estudar-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 40px;
+ position: relative;  /* ← Adiciona */
+    z-index: 30;  /* ← Adiciona */
+}
+
+.por-que-estudar-title {
+    flex: 1;
+}
+
+.por-que-estudar-title h2 {
+    font-size: 2.5rem;
+    font-weight: 300;
+    letter-spacing: 2px;
+    color: rgba(150, 150, 255, 0.9);
+    text-shadow: 0 0 60px rgba(10, 10, 15, 0.9),
+                 0 0 40px rgba(150, 100, 200, 0.6),
+                 0 0 20px rgba(150, 100, 200, 0.4);
+}
+
+
+.por-que-estudar-description p {
+    font-size: 1.2rem;
+    color: rgba(217, 217, 228, 0.8);
+    text-shadow: 0 0 60px rgba(10, 10, 15, 0.9),
+                 0 0 40px rgba(150, 100, 200, 0.6),
+                 0 0 20px rgba(150, 100, 200, 0.4);
+}
+
+
+.por-que-estudar-description {
+    flex: 1;
+}
+
+.pqEstudar-img {
+    width: 100%;
+    max-width: 1000px;  /* ← Diminui tamanho */
+    height: auto;
+    display: block;
+    margin: 60px auto 0;  /* ← Centraliza e espaço do topo */
+    border-radius: 10px;
+
+}
+
+/* Cards de características */
+
+
+.pqEstudar-cards {
+    width: 100%;
+    padding: 80px 40px;
+    max-width: 1400px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+      position: relative;  /* ← Adiciona */
+    z-index: 38;
+}
+
+.feature-card {
+    display: flex;
+    align-items: center;
+    gap: 55px;
+    padding: 65px 45px;
+    background: linear-gradient(
+        90deg,
+        rgba(10, 12, 25, .95) 0%,
+        rgba(10, 12, 25, .88) 45%,
+        rgba(10, 12, 25, .15) 100%
+    );
+    backdrop-filter: blur(18px);
+    border: 1px solid rgba(120, 90, 255, .25);
+    border-radius: 24px;
+    box-shadow: 0 0 20px rgba(110, 80, 255, .08);
+    transition: all 0.3s ease;
+
+     position: relative;  /* ← Adiciona */
+    z-index: 38;
+}
+
+.feature-card:hover {
+    border-color: rgba(170, 120, 255, .6);
+    box-shadow: 0 0 40px rgba(110, 80, 255, .18);
+    transform: translateY(-5px);
+}
+
+.feature-card-content {
+    flex: 1;
+  
+}
+
+.feature-card-image {
+    flex: 1;
+
+height: 300px;
+
+    border-radius: 20px;  /* ← Arredonda */
+}
+.feature-card-content h3 {
+    font-size: 2rem;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    color: rgba(150, 150, 255, 0.9);
+    margin-bottom: 20px;
+    text-shadow: 0 0 20px rgba(150, 150, 255, 0.3);
+}
+
+.feature-card-content p {
+    font-size: 1rem;
+    color: rgba(217, 217, 228, 0.8);
+    line-height: 1.6;
+    margin-bottom: 30px;
+}
+
+.feature-card-btn {
+    display: inline-block;
+    padding: 12px 30px;
+    background: rgba(150, 150, 255, 0.1);
+    color: rgba(150, 150, 255, 0.9);
+    border: 1px solid rgba(150, 150, 255, 0.3);
+    border-radius: 8px;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.feature-card-btn:hover {
+    background: rgba(150, 150, 255, 0.2);
+    border-color: rgba(150, 150, 255, 0.6);
+    box-shadow: 0 0 15px rgba(150, 150, 255, 0.3);
+}
+
+.feature-card-image-smaller img {
+    width: 125% !important;  /* ← Diminui de 150% para 120% */
+margin-left: -30px!important;  /* ← Ajusta a posição */ 
+
+}
+.feature-card-image img {
+    width: 133%;
+    height: 350px;
+    display: block;
+    border-radius: 20px;
+    margin-left: -49px;
+    display: block;
+    margin-top: -10px;
+
 }
