@@ -93,12 +93,11 @@ const statsSection = document.querySelector('.stats-section');
 const timeline = {
     devclub: 500,
     matrixStart: 500,
-    h1: 2000,
-    p: 2100,
-    btn: 2200,
-    stats: 2300
+    h1: 1100,
+    p: 1250,
+    btn: 1400,
+    stats: 1550
 };
-
 function hideAllElements() {
     devclubReveal.style.opacity = '0';
     contentH1.style.opacity = '0';
@@ -330,7 +329,7 @@ modalCloseIA.addEventListener('click', () => {
 
 
 
-// full-stack
+
 
 // FULLSTACK
 const planetaFullStack = document.querySelector('.planeta.fullstack');
@@ -350,4 +349,99 @@ modalOverlayFullStack.addEventListener('click', (e) => {
 
 modalCloseFullStack.addEventListener('click', () => {
     modalFullStack.style.display = 'none';
+});
+
+
+// ===== PROFESSORES =====
+
+const slider = document.querySelector(".teachers-slider");
+const nextBtn = document.querySelector(".teachers-next");
+const prevBtn = document.querySelector(".teachers-prev");
+const cards = document.querySelectorAll(".teacher-card");
+
+let currentPosition = 0;
+
+// largura de um card + gap
+const move = cards[0].offsetWidth + 30;
+
+// quantidade máxima que o slider pode andar
+const maxPosition = (cards.length - 4) * move;
+
+// Próximo
+nextBtn.addEventListener("click", () => {
+
+    if (currentPosition < maxPosition) {
+
+        currentPosition += move;
+
+        slider.style.transform = `translateX(-${currentPosition}px)`;
+
+    }
+
+});
+
+// Anterior
+prevBtn.addEventListener("click", () => {
+
+    if (currentPosition > 0) {
+
+        currentPosition -= move;
+
+        slider.style.transform = `translateX(-${currentPosition}px)`;
+
+    }
+
+});
+
+
+
+
+// ==========================
+// LOGIN MODAL
+// ==========================
+
+const loginOpen = document.querySelector(".login-open");
+const loginOverlay = document.querySelector(".login-overlay");
+const loginClose = document.querySelector(".login-close");
+
+// Abrir
+
+loginOpen.addEventListener("click", (e) => {
+
+    e.preventDefault();
+
+    loginOverlay.style.display = "flex";
+
+});
+
+// Fechar no X
+
+loginClose.addEventListener("click", () => {
+
+    loginOverlay.style.display = "none";
+
+});
+
+// Fechar clicando fora
+
+loginOverlay.addEventListener("click", (e) => {
+
+    if(e.target === loginOverlay){
+
+        loginOverlay.style.display = "none";
+
+    }
+
+});
+
+// Fechar com ESC
+
+document.addEventListener("keydown", (e) => {
+
+    if(e.key === "Escape"){
+
+        loginOverlay.style.display = "none";
+
+    }
+
 });

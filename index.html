@@ -6,7 +6,19 @@
     <title>DEVCLUB - Universo da Programação</title>
     <link rel="stylesheet" href="css/style.css" />
     <script src="js/script.js" defer></script>
-  </head>
+<link rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+
+<link rel="preconnect"
+      href="https://fonts.gstatic.com"
+      crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;700&display=swap"
+      rel="stylesheet">
+
+</head>
   <body>
     <header class="header">
       <div class="header-content">
@@ -14,14 +26,15 @@
 
         <nav class="nav">
           <a href="#formacoes">Formações</a>
-          <a href="#empresas">Por que DevClub?</a>
-          <a href="#tecnologias">Tecnologias</a>
-          <a href="#tutoriais">Tutoriais</a>
+          <a href="#por-que-estudar">Por que DevClub?</a>
+          <a href="#plataforma">Plataforma</a>
+          <a href="#teachers">Professores</a>
+          <a href="#pricing">Planos</a>
         </nav>
 
         <div class="nav-right">
           <a href="#area-aluno">Área do Aluno</a>
-          <button class="btn-signin">Entre aqui</button>
+          <button class="btn-signin login-open">Entre aqui</button>
         </div>
 
         <button class="menu-toggle">☰</button>
@@ -30,24 +43,27 @@
 
     <main>
       <section class="hero">
+
+
+  <div class="hero-bg-art"></div>
         <svg id="connections" class="connections"></svg>
 
         <div class="hero-content">
-          
+         
 <div class="devclub-reveal">DEVCLUB</div> 
          <div class="content">
  
-  
+
             <h1>
     CADA LINHA 
   <br>  DE CÓDIGO<br>
     CONSTRÓI O UNIVERSO
   </h1>
 
-  <p>Um organismo vivo em contínua evolução</p>
-
+  <p>Sua jornada para o próximo nível começa aqui.</p>
+ 
 </div>
-
+ 
          
   <div class="hero-cta">
           <button class="btn-primary">Começar Agora</button>
@@ -67,11 +83,45 @@
             <p class="stats-subtitle">alunos transformaram suas vidas</p>
         </div>
     </div>
-
-
       
       </section>
     </main>
+
+
+
+<div class="section-divider">
+    <svg viewBox="0 0 1200 200" preserveAspectRatio="none" class="nebulosa-svg">
+        <!-- Nebulosa base -->
+        <ellipse cx="500" cy="100" rx="550" ry="80" fill="url(#nebulosaGradient)" opacity="0.6"/>
+        
+        <!-- Partículas flutuantes -->
+        <circle cx="200" cy="80" r="3" fill="rgba(150, 150, 255, 0.8)" class="particle"/>
+        <circle cx="400" cy="120" r="2" fill="rgba(100, 150, 255, 0.6)" class="particle"/>
+        <circle cx="800" cy="60" r="2.5" fill="rgba(200, 100, 255, 0.7)" class="particle"/>
+        <circle cx="1000" cy="100" r="3" fill="rgba(150, 150, 255, 0.8)" class="particle"/>
+        
+        <!-- Gradiente -->
+        <defs>
+            <radialGradient id="nebulosaGradient">
+                <stop offset="0%" style="stop-color:rgba(150, 100, 255, 0.4);stop-opacity:1" />
+                <stop offset="50%" style="stop-color:rgba(100, 150, 255, 0.2);stop-opacity:1" />
+                <stop offset="100%" style="stop-color:rgba(100, 150, 255, 0);stop-opacity:0" />
+            </radialGradient>
+        </defs>
+    </svg>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
 <section class="formacoes" id="formacoes">
     <div class="formacoes-header">
         <div class="formacoes-title">
@@ -107,7 +157,7 @@
     <div class="modal-overlay"></div>
     <div class="modal-content">
         <button class="modal-close">×</button>
-        <img src="/assets/img/img-front-end.png" alt="Programação Front End" class="modal-image">
+        <img src="assets/img/img-front-end.png" alt="Programação Front End" class="modal-image">
     <button class="modal-btn">Quero começar →</button>
     
       </div>
@@ -121,7 +171,7 @@
     <div class="modal-content">
         <button class="modal-close">×</button>
         <img src="assets/img/img-backend.png" alt="Programação Back End" class="modal-image">
-        <button class="modal-btn modal-btn-backend"">Quero começar →</button>
+        <button class="modal-btn modal-btn-backend">Quero começar →</button>
     </div>
 </div>
 
@@ -156,6 +206,34 @@
 </div>
 </section>
 
+
+
+<div class="section-divider">
+    <svg viewBox="0 0 1200 200" preserveAspectRatio="none" class="nebulosa-svg">
+        <!-- Nebulosa base -->
+        <ellipse cx="600" cy="100" rx="500" ry="80" fill="url(#nebulosaGradient)" opacity="0.6"/>
+        
+        <!-- Partículas flutuantes -->
+        <circle cx="200" cy="80" r="3" fill="rgba(150, 150, 255, 0.8)" class="particle"/>
+        <circle cx="400" cy="120" r="2" fill="rgba(100, 150, 255, 0.6)" class="particle"/>
+        <circle cx="800" cy="60" r="2.5" fill="rgba(200, 100, 255, 0.7)" class="particle"/>
+        <circle cx="1000" cy="100" r="3" fill="rgba(150, 150, 255, 0.8)" class="particle"/>
+        
+        <!-- Gradiente -->
+        <defs>
+            <radialGradient id="nebulosaGradient">
+                <stop offset="0%" style="stop-color:rgba(150, 100, 255, 0.4);stop-opacity:1" />
+                <stop offset="50%" style="stop-color:rgba(100, 150, 255, 0.2);stop-opacity:1" />
+                <stop offset="100%" style="stop-color:rgba(100, 150, 255, 0);stop-opacity:0" />
+            </radialGradient>
+        </defs>
+    </svg>
+</div>
+
+
+
+
+
 <section class="por-que-estudar" id="por-que-estudar">
     <div class="por-que-estudar-container">
         <div class="por-que-estudar-title">
@@ -166,7 +244,7 @@
         </div>
     </div>
 
-<img src="/assets/img/pqEstudar.png" alt="Por que estudar na DevClub?" class="pqEstudar-img">
+<img src="assets/img/pqEstudar.png" alt="Por que estudar na DevClub?" class="pqEstudar-img">
 
 
 </section>
@@ -182,7 +260,7 @@
             <a href="#" class="feature-card-btn">Conhecer metodologia →</a>
         </div>
         <div class="feature-card-image feature-card-image-smaller">
-            <img src="/assets/img/card-1.png" alt="Aprendizado na prática">
+            <img src="assets/img/card-1.png" alt="Aprendizado na prática">
         </div>
     </div>
 
@@ -194,7 +272,7 @@
             <a href="#" class="feature-card-btn">Conheça a comunidade →</a>
         </div>
         <div class="feature-card-image feature-card-image-smaller">
-            <img src="/assets/img/card-2.png" alt="Comunidade que impulsiona você">
+            <img src="assets/img/card-2.png" alt="Comunidade que impulsiona você">
         </div>
     </div>
 
@@ -206,7 +284,7 @@
             <a href="#" class="feature-card-btn">Ver projetos reais →</a>
         </div>
         <div class="feature-card-image">
-            <img src="/assets/img/card-3.png" alt="Construa projetos reais">
+            <img src="assets/img/card-3.png" alt="Construa projetos reais">
         </div>
     </div>
 
@@ -218,10 +296,456 @@
             <a href="#" class="feature-card-btn">Impulsione sua carreira →</a>
         </div>
         <div class="feature-card-image feature-card-image-smaller">
-            <img src="/assets/img/card-4.png" alt="Card 4">
+            <img src="assets/img/card-4.png" alt="Card 4">
         </div>
     </div>
 </section>
+
+
+<div class="section-divider">
+    <svg viewBox="0 0 1200 200" preserveAspectRatio="none" class="nebulosa-svg">
+        <!-- Nebulosa base -->
+        <ellipse cx="600" cy="100" rx="500" ry="80" fill="url(#nebulosaGradient)" opacity="0.6"/>
+        
+        <!-- Partículas flutuantes -->
+        <circle cx="200" cy="80" r="3" fill="rgba(150, 150, 255, 0.8)" class="particle"/>
+        <circle cx="400" cy="120" r="2" fill="rgba(100, 150, 255, 0.6)" class="particle"/>
+        <circle cx="800" cy="60" r="2.5" fill="rgba(200, 100, 255, 0.7)" class="particle"/>
+        <circle cx="1000" cy="100" r="3" fill="rgba(150, 150, 255, 0.8)" class="particle"/>
+        
+        <!-- Gradiente -->
+        <defs>
+            <radialGradient id="nebulosaGradient">
+                <stop offset="0%" style="stop-color:rgba(150, 100, 255, 0.4);stop-opacity:1" />
+                <stop offset="50%" style="stop-color:rgba(100, 150, 255, 0.2);stop-opacity:1" />
+                <stop offset="100%" style="stop-color:rgba(100, 150, 255, 0);stop-opacity:0" />
+            </radialGradient>
+        </defs>
+    </svg>
+</div>
+
+
+
+<section class="plataforma" id="plataforma">
+    <h2 class="plataforma-title">Sua jornada pelo
+universo da programação
+começa aqui.</h2>
+    
+    <div class="plataforma-card">
+        <div class="plataforma-content">
+            <h3>Sua nave para explorar o  universo🚀 <br> Embarque nessa missão</h3>
+            <p>Descubra uma plataforma completa para aprender na prática, desenvolver projetos reais e evoluir ao lado de uma comunidade apaixonada por tecnologia.</p>
+            <a href="#" class="plataforma-btn">Explorar Plataforma →</a>
+        </div>
+        <div class="plataforma-image">
+            <img src="assets/img/plataforma.png" alt="Plataforma">
+        </div>
+    </div>
+</section>
+
+<section class="teachers" id="teachers">
+
+    <h2>Conheça quem vai guiar sua jornada.</h2>
+<p>Aprenda com profissionais que vivem programação todos os dias e estão prontos para acelerar sua evolução.</p>
+    <div class="teachers-wrapper">
+
+        <button class="teachers-prev">
+            &#10094;
+        </button>
+
+        <div class="teachers-slider">
+
+            <div class="teacher-card">
+                <h3>Pedro Machado</h3>
+
+                <img src="/assets/img/professores/matheus.png"
+                     alt="Pedro Machado"
+                     class="teacher-photo">
+
+                <span>🟨 JavaScript</span>
+            </div>
+
+            <div class="teacher-card">
+                <h3>Gabriela Dias</h3>
+
+                <img src="/assets/img/professores/gabriela.png"
+                     alt="Gabriela Dias"
+                     class="teacher-photo">
+
+                <span>🌐 HTML & CSS</span>
+            </div>
+
+            <div class="teacher-card">
+                <h3>Lucas Mendes</h3>
+
+                <img src="/assets/img/professores/lucas.png"
+                     alt="Lucas Mendes"
+                     class="teacher-photo">
+
+                <span>⚛️ React</span>
+            </div>
+
+            <div class="teacher-card">
+                <h3>Lari Oliveira</h3>
+
+                <img src="/assets/img/professores/lari.png"
+                     alt="Lari Oliveira"
+                     class="teacher-photo testa">
+
+                <span>🟢 Node.js</span>
+            </div>
+
+
+             <div class="teacher-card">
+                <h3>Carlos Perdigão</h3>
+
+                <img src="/assets/img/professores/carlos.png"
+                     alt="Lari Oliveira"
+                     class="teacher-photo testa">
+
+                <span>🎨 Tailwind CSS</span>
+            </div>
+            <div class="teacher-card">
+                <h3>Helena Santos</h3>
+
+                <img src="/assets/img/professores/helena.png"
+                     alt="Lari Oliveira"
+                     class="teacher-photo testa">
+
+                <span>🔧 Git</span>
+            </div>
+
+    <div class="teacher-card">
+                <h3>João Pedro</h3>
+
+                <img src="/assets/img/professores/joao-pedro.png"
+                     alt="Lari Oliveira"
+                     class="teacher-photo testa">
+
+                <span>🅰️ Angular</span>
+            </div>
+
+
+        </div>
+
+        <button class="teachers-next">
+            &#10095;
+        </button>
+
+    </div>
+</section>
+
+
+
+<div class="section-divider">
+    <svg viewBox="0 0 1200 200" preserveAspectRatio="none" class="nebulosa-svg">
+        <!-- Nebulosa base -->
+        <ellipse cx="600" cy="100" rx="500" ry="80" fill="url(#nebulosaGradient)" opacity="0.6"/>
+        
+        <!-- Partículas flutuantes -->
+        <circle cx="200" cy="80" r="3" fill="rgba(150, 150, 255, 0.8)" class="particle"/>
+        <circle cx="400" cy="120" r="2" fill="rgba(100, 150, 255, 0.6)" class="particle"/>
+        <circle cx="800" cy="60" r="2.5" fill="rgba(200, 100, 255, 0.7)" class="particle"/>
+        <circle cx="1000" cy="100" r="3" fill="rgba(150, 150, 255, 0.8)" class="particle"/>
+        
+        <!-- Gradiente -->
+        <defs>
+            <radialGradient id="nebulosaGradient">
+                <stop offset="0%" style="stop-color:rgba(150, 100, 255, 0.4);stop-opacity:1" />
+                <stop offset="50%" style="stop-color:rgba(100, 150, 255, 0.2);stop-opacity:1" />
+                <stop offset="100%" style="stop-color:rgba(100, 150, 255, 0);stop-opacity:0" />
+            </radialGradient>
+        </defs>
+    </svg>
+</div>
+
+
+
+
+<!-- preços -->
+
+
+<section class="pricing" id="pricing">
+
+    <span class="pricing-tag">
+        ✦ INVESTIMENTO
+    </span>
+
+    <h2>
+        Escolha o plano ideal para sua
+        <span>Jornada</span>
+    </h2>
+
+    <p>
+        Aprenda programação com uma metodologia prática,
+        projetos reais e acompanhamento de profissionais.
+    </p>
+
+    <div class="pricing-container">
+
+        <!-- CARD 1 -->
+
+        <div class="pricing-card destaque">
+
+            <span class="popular">
+                MAIS POPULAR
+            </span>
+
+            <h3>DEV PRO</h3>
+
+            <div class="price">
+
+                <small>12x</small>
+
+                <h4>R$ 49,90</h4>
+
+            </div>
+
+            <span class="avista">
+                ou R$ 497 à vista
+            </span>
+
+            <ul>
+
+                <li>✔ Todos os cursos</li>
+
+                <li>✔ Projetos práticos</li>
+
+                <li>✔ Certificado</li>
+
+                <li>✔ Comunidade exclusiva</li>
+
+                <li>✔ Atualizações futuras</li>
+                <li>✔ Cancelamento a qualquer momento</li>
+            </ul>
+
+            <button>
+                Começar Agora
+            </button>
+
+        </div>
+
+        <!-- CARD 2 -->
+
+        <div class="pricing-card">
+
+            <h3>Plano Vitalício</h3>
+
+            <div class="price">
+
+                <small>12x</small>
+
+                <h4>R$ 99,90</h4>
+
+            </div>
+
+            <span class="avista">
+                ou R$ 997 à vista
+            </span>
+
+            <ul>
+
+                <li>✔ Acesso para sempre</li>
+
+                <li>✔ Todos os cursos</li>
+
+                <li>✔ Todos os projetos</li>
+
+                <li>✔ Certificados</li>
+
+                <li>✔ Suporte prioritário</li>
+                <li>✔ Cancelamento a qualquer momento</li>
+
+            </ul>
+
+            <button>
+                Garantir Minha Vaga
+            </button>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<footer class="footer">
+
+    <div class="footer-container">
+
+        <!-- SOBRE -->
+
+        <div class="footer-about">
+
+            <h2>DEVCLUB</h2>
+
+            <p>
+                Aprenda programação através de projetos reais e
+                evolua para o próximo nível.
+            </p>
+
+            <div class="footer-social">
+
+                <a href="#">
+                    <i class="fa-brands fa-github"></i>
+                </a>
+
+                <a href="#">
+                    <i class="fa-brands fa-instagram"></i>
+                </a>
+
+                <a href="#">
+                    <i class="fa-brands fa-linkedin"></i>
+                </a>
+
+                <a href="#">
+                    <i class="fa-brands fa-youtube"></i>
+                </a>
+
+            </div>
+
+        </div>
+
+        <!-- PLATAFORMA -->
+
+        <div class="footer-links">
+
+            <h3>Plataforma</h3>
+
+            <ul>
+
+                <li><a href="#teachers">Professores</a></li>
+
+                <li><a href="#pricing">Planos</a></li>
+
+                <li><a href="#">Comunidade</a></li>
+
+                <li><a href="#">Certificados</a></li>
+
+            </ul>
+
+        </div>
+
+        <!-- SUPORTE -->
+
+        <div class="footer-links">
+
+            <h3>Suporte</h3>
+
+            <ul>
+
+                <li><a href="#">Central de Ajuda</a></li>
+
+                <li><a href="#">Fale Conosco</a></li>
+
+                <li><a href="#">WhatsApp</a></li>
+
+                <li><a href="#">FAQ</a></li>
+
+            </ul>
+
+        </div>
+
+        <!-- INSTITUCIONAL -->
+
+        <div class="footer-links">
+
+            <h3>Institucional</h3>
+
+            <ul>
+
+                <li><a href="#">Sobre</a></li>
+
+                <li><a href="#">Blog</a></li>
+
+                <li><a href="#">Carreiras</a></li>
+
+                <li><a href="#">Política de Privacidade</a></li>
+
+            </ul>
+
+        </div>
+
+    </div>
+
+    <div class="footer-bottom">
+
+        <p>
+            © 2026 DevClub. Todos os direitos reservados.
+        </p>
+
+    </div>
+
+</footer>
+
+
+
+
+<a href="https://wa.me/5511999999999" class="whatsapp" target="_blank">
+    <i class="fa-brands fa-whatsapp"></i>
+</a>
+
+
+
+
+
+
+
+<!-- ==========================
+        LOGIN MODAL
+========================== -->
+
+<div class="login-overlay">
+
+    <div class="login-modal">
+
+        <button class="login-close">
+            <i class="fa-solid fa-xmark"></i>
+        </button>
+
+        <h2>DEVCLUB</h2>
+
+        <form>
+
+            <div class="input-group">
+
+                <label>Email</label>
+
+                <input
+                    type="email"
+                    placeholder="Digite seu e-mail"
+                >
+
+            </div>
+
+            <div class="input-group">
+
+                <label>Senha</label>
+
+                <input
+                    type="password"
+                    placeholder="Digite sua senha"
+                >
+
+            </div>
+
+            <button class="login-btn">
+
+                Entrar
+
+            </button>
+
+<a href="#" class="forgot-password">
+
+    Esqueceu sua senha?
+
+</a>
+
+        </form>
+
+    </div>
+
+</div>
 
 
 
